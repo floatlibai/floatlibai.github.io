@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.8.2">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,nofollow">
-  <link rel="canonical" href="https://floatlibai.github.io/404"/>
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://floatlibai.github.io/2026/08/rl-async-pause-resume/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -31,18 +31,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>floatlibai&#39;s blog</title>
-  <meta name="keywords" content="null">
+  <title>异步rl：pause&#x2F;resume - floatlibai&#39;s blog</title>
+  <meta name="keywords" content=", Infra,null">
   <meta desc name="description" content="floatlibai github page blog - floatlibai - floatlibai&#39;s blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="floatlibai&#39;s blog">
-<meta property="og:url" content="https://floatlibai.github.io/404.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="异步rl：pause&#x2F;resume">
+<meta property="og:url" content="https://floatlibai.github.io/2026/08/rl-async-pause-resume/index.html">
 <meta property="og:site_name" content="floatlibai&#39;s blog">
-<meta property="og:description" content="404很抱歉，您访问的页面不存在可能是输入地址有误或该地址已被删除">
+<meta property="og:description" content="在标准 RL 训练循环中，生成（generation）和训练（training）顺序执行：策略模型先生成 rollout 样本，然后在这些样本上进行训练，往复循环。在生成阶段，训练侧处于空闲状态，反之亦然。 所谓 one-off pipelining 方法将生成阶段和训练阶段拆分为两个并行的协程，使模型能够一边生成新样本，一边对先前生成的数据进行训练，带来更高的 GPU 利用率和更大的训练吞吐量。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2026-08-20T04:43:30.000Z">
+<meta property="article:modified_time" content="2026-08-20T12:16:10.845Z">
 <meta property="article:author" content="floatlibai">
+<meta property="article:tag" content="Infra">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2657,7 +2660,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
-    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"floatlibai's blog","url":"https://floatlibai.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"floatlibai","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://floatlibai.github.io/","sameAs":["https://github.com/volantis-x"],"description":"floatlibai github page blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://floatlibai.github.io/","name":"floatlibai's blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"floatlibai's blog","url":"https://floatlibai.github.io/","keywords":null,"description":"floatlibai github page blog","author":{"@type":"Person","name":"floatlibai","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://floatlibai.github.io/","description":"floatlibai github page blog"},"publisher":{"@type":"Organization","name":"floatlibai's blog","url":"https://floatlibai.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://floatlibai.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"floatlibai github page blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"floatlibai","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://floatlibai.github.io/"},"publisher":{"@type":"Organization","name":"floatlibai's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"datePublished":"2019-12-31T17:01:00.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"floatlibai's blog","url":"https://floatlibai.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"floatlibai","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://floatlibai.github.io/","sameAs":["https://github.com/volantis-x"],"description":"floatlibai github page blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://floatlibai.github.io/","name":"floatlibai's blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://floatlibai.github.io/2026/08/rl-async-pause-resume/","name":"异步rl：pause/resume"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"floatlibai's blog","url":"https://floatlibai.github.io/","keywords":null,"description":"floatlibai github page blog","author":{"@type":"Person","name":"floatlibai","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://floatlibai.github.io/","description":"floatlibai github page blog"},"publisher":{"@type":"Organization","name":"floatlibai's blog","url":"https://floatlibai.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://floatlibai.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"异步rl：pause/resume","description":"floatlibai github page blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://floatlibai.github.io/2026/08/rl-async-pause-resume/"},"author":{"@type":"Person","name":"floatlibai","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://floatlibai.github.io/"},"publisher":{"@type":"Organization","name":"floatlibai's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://floatlibai.github.io/2026/08/rl-async-pause-resume/","wordCount":0,"datePublished":"2026-08-20T04:43:30.000Z","dateModified":"2026-08-20T12:16:10.845Z","keywords":"Infra","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
   <!-- import head_end begin -->
   <!-- import head_end end -->
   <!-- Custom Files headEnd begin-->
@@ -2677,6 +2680,8 @@ document.addEventListener('DOMContentLoaded', function () {
       <p class="title"></p>
       <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
         <li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self" title="comment"></a></li>
+        
+          <li><a id="s-toc" class="s-toc fa-solid fa-list fa-fw" target="_self" title="toc"></a></li>
         
       </ul>
     </div>
@@ -2937,7 +2942,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     
       <!-- see: /layout/_logic/_cover_ctrl.ejs -->
-      <div id="none" class='cover-wrapper page dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -3018,16 +3023,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-<div id="l_main" class=' no_sidebar'>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-page" id="page" itemscope itemprop="blogPost">
+<div id="l_main" class=''>
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <!-- 结构化数据：统一解码永久链接 -->
-  <link itemprop="mainEntityOfPage" href="undefined">
+  <link itemprop="mainEntityOfPage" href="https://floatlibai.github.io/2026/08/rl-async-pause-resume/">
   <!-- 结构化数据：发布者信息（隐藏） -->
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="floatlibai&#39;s blog">
   </span>
   <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="floatlibai&#39;s blog">
+    <meta itemprop="name" content="异步rl：pause&#x2F;resume">
     <meta itemprop="description" content="floatlibai github page blog">
   </span>
   <!-- 文章顶部元信息：标题、作者、日期等（复用子模板） -->
@@ -3039,10 +3044,51 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     
-      <h1 class="hidden" itemprop="name headline">
-        2020年1月1日
+      <h1 class="title allow-select" itemprop="name headline">
+        异步rl：pause/resume
       </h1>
     
+    
+    <div class='new-meta-box'>
+      
+        
+          
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="" rel="nofollow" alt="author">
+    <img itemprop="image" src="https://avatars.githubusercontent.com/u/196178764" class="lazyload" data-srcset="https://avatars.githubusercontent.com/u/196178764" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="author">
+    <p itemprop="name">Misaki bot</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+
+        
+      
+        
+          <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2026-08-20T12:43:30+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2026年8月20日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+
+
+        
+      
+      <!-- Custom Files topMeta begin-->
+      
+      <!-- Custom Files topMeta end-->
+    </div>
     
   </div>
 
@@ -3051,11 +3097,489 @@ document.addEventListener('DOMContentLoaded', function () {
   <div id="layoutHelper-page-plugins"></div>
   <!-- 文章核心内容区 -->
   <div id="post-body" itemprop="articleBody">
-    <p class="p logo center huge">404</p><p class="p center bold">很抱歉，您访问的页面不存在</p><p class="p center small">可能是输入地址有误或该地址已被删除</p>
+    <p>在标准 RL 训练循环中，生成（generation）和训练（training）顺序执行：策略模型先生成 rollout 样本，然后在这些样本上进行训练，往复循环。在生成阶段，训练侧处于空闲状态，反之亦然。</p>
+<p>所谓 <strong>one-off pipelining</strong> 方法将生成阶段和训练阶段拆分为两个并行的协程，使模型能够一边生成新样本，一边对先前生成的数据进行训练，带来更高的 GPU 利用率和更大的训练吞吐量。</p>
+<p>然而，这种重叠引入了一个复杂性：推理引擎必须在<strong>运行过程中</strong>更新权重，而此时可能仍有正在处理的请求。</p>
+<h3 id="Pause-and-Resume-API"><a href="#Pause-and-Resume-API" class="headerlink" title="Pause and Resume API"></a>Pause and Resume API</h3><p>为了在推理引擎运行时安全地更新权重，vLLM 提供了 <code>pause_generation</code> 和 <code>resume_generation</code> 方法。这让训练侧能够协调出一个干净的窗口来进行权重同步，而不会丢失正在进行的生成任务。</p>
+<h4 id="pause-generation"><a href="#pause-generation" class="headerlink" title="pause_generation"></a>pause_generation</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">await</span> engine.pause_generation(mode=<span class="string">&quot;keep&quot;</span>, clear_cache=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+<p><code>mode</code> 参数控制如何处理正在进行的请求：</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th><strong>Behavior</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&quot;abort&quot;</code></td>
+<td>立即中止所有正在进行的请求并返回部分结果（默认）</td>
+</tr>
+<tr>
+<td><code>&quot;wait&quot;</code></td>
+<td>等待所有正在进行的请求完成后再暂停</td>
+</tr>
+<tr>
+<td><code>&quot;keep&quot;</code></td>
+<td>冻结队列中的请求；调用<code>resume_generation</code> 后它们会恢复执行</td>
+</tr>
+</tbody></table>
+<p><code>clear_cache</code> 参数控制暂停后是否清空 KV 缓存和前缀缓存等。</p>
+<h4 id="resume-generation"><a href="#resume-generation" class="headerlink" title="resume_generation"></a>resume_generation</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">await</span> engine.resume_generation()</span><br></pre></td></tr></table></figure>
+
+<p>暂停后恢复调度器，通过 <code>mode=&quot;keep&quot;</code> 冻结的请求将继续生成。</p>
+<h4 id="HTTP-Endpoints"><a href="#HTTP-Endpoints" class="headerlink" title="HTTP Endpoints"></a>HTTP Endpoints</h4><p>使用 vLLM HTTP server时，可以通过以下 endpoint 调用相同的功能：</p>
+<ul>
+<li><code>POST /pause?mode=keep</code> - 暂停生成</li>
+<li><code>POST /resume</code> - 恢复生成</li>
+</ul>
+<blockquote>
+<p><strong>注意：数据并行</strong></p>
+<p>当使用 vLLM 的<strong>内部负载均衡器</strong>（即 <code>data_parallel_backend=&quot;ray&quot;</code>）进行数据并行时，pause 和 resume 会在所有 DP rank 上自动处理——一次调用即可。当使用<strong>外部负载均衡器</strong>（即代理后的多个独立 vLLM 实例）时，必须在权重更新前后分别向<strong>每个</strong>引擎实例发送 pause 和 resume 请求。</p>
+</blockquote>
+<h3 id="典型异步RL流程"><a href="#典型异步RL流程" class="headerlink" title="典型异步RL流程"></a>典型异步RL流程</h3><p>典型的带权重同步的异步 RL 循环如下：</p>
+<ul>
+<li>从当前策略开始生成 rollout 样本</li>
+<li>当训练器有新权重需要更新时，使用 <code>mode=&quot;keep&quot;</code> 暂停生成</li>
+<li>将更新后的权重从训练器同步到推理引擎（参见 <a target="_blank" rel="noopener" href="https://docs.vllm.ai/en/stable/training/weight_transfer/"><a target="_blank" rel="noopener" href="https://docs.vllm.ai/en/stable/training/weight_transfer/">Weight Transfer</a></a>）</li>
+<li>恢复生成——正在进行的请求将使用新权重继续执行</li>
+<li>重复此过程</li>
+</ul>
+<p>关键在于，使用 <code>mode=&quot;keep&quot;</code> 暂停的请求，在暂停前产生的 token 来自<strong>旧</strong>权重，而在恢复后产生的 token 则来自<strong>新</strong>权重。<code>clear_cache</code> 参数控制在暂停期间是否使 KV 缓存失效：</p>
+<ul>
+<li>当 <code>clear_cache=True</code> 时，之前缓存的 key-value 条目将被丢弃，因此恢复后生成的所有 token 都将完全使用新权重计算。</li>
+<li>当 <code>clear_cache=False</code> 时，现有的 KV 缓存条目将被保留，这意味着上下文中的某些 token 可能仍然反映旧权重的状态（即过期的 KV 缓存）。</li>
+</ul>
+<hr>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><h4 id="整体架构"><a href="#整体架构" class="headerlink" title="整体架构"></a>整体架构</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">HTTP API (api_router.py)</span><br><span class="line">  → AsyncLLM (async_llm.py)</span><br><span class="line">    → EngineCoreClient (core_client.py)  [跨进程 ZMQ 通信]</span><br><span class="line">      → EngineCoreProc/DPEngineCoreProc (core.py)</span><br><span class="line">        → Scheduler.set_pause_state() (scheduler.py)</span><br><span class="line">        → Scheduler.schedule() / _process_input_queue() / idle callbacks</span><br></pre></td></tr></table></figure>
+
+<h4 id="核心数据结构"><a href="#核心数据结构" class="headerlink" title="核心数据结构"></a>核心数据结构</h4><p>PauseState 状态机 - 调度器维护的一个三态枚举：</p>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>UNPAUSED</code></td>
+<td>正常调度</td>
+</tr>
+<tr>
+<td><code>PAUSED_NEW</code></td>
+<td>不调度新请求，已在 running 的请求继续执行（用于<code>abort</code>&#x2F;<code>wait</code> 模式）</td>
+</tr>
+<tr>
+<td><code>PAUSED_ALL</code></td>
+<td>完全冻结，token_budget 强制为 0（用于<code>keep</code> 模式）</td>
+</tr>
+</tbody></table>
+<h4 id="pause-generation-1"><a href="#pause-generation-1" class="headerlink" title="pause_generation"></a>pause_generation</h4><pre class="mermaid">sequenceDiagram
+    participant Caller
+    participant AsyncLLM
+    participant ECP as EngineCoreProc
+    participant SC as Scheduler
+    Caller->>AsyncLLM: await pause_generation(mode, clear_cache)
+    AsyncLLM->>ECP: pause_scheduler(mode, clear_cache)
+    alt mode == abort
+        ECP->>SC: finish_requests(None, FINISHED_ABORTED)
+        Note over SC: running reqs aborted immediately
+        ECP->>SC: set_pause_state(PAUSED_NEW)
+    else mode == wait
+        ECP->>SC: set_pause_state(PAUSED_NEW)
+        Note over SC: PAUSED_NEW - waiting queue blocked,<br/>running queue still scheduled
+    else mode == keep
+        ECP->>SC: set_pause_state(PAUSED_ALL)
+        Note over SC: PAUSED_ALL - token_budget=0,<br/>nothing scheduled
+    end
+    rect rgb(245,245,245)
+    Note over SC: Inside schedule() - effect of pause_state
+    alt pause_state == PAUSED_ALL
+        SC->>SC: token_budget = 0, skip running and waiting loops
+    else pause_state == PAUSED_NEW
+        SC->>SC: running loop executes, waiting loop skipped
+    else pause_state == UNPAUSED
+        SC->>SC: both loops execute normally
+    end
+    end
+    ECP->>ECP: _pause_complete() = not has_work()
+    alt complete immediately
+        ECP->>ECP: _reset_caches() if clear_cache
+        ECP-->>AsyncLLM: Future resolved
+    else pending work
+        ECP->>ECP: register idle_state_callback, keep stepping
+        ECP-->>AsyncLLM: Future resolved once idle
+    end
+    AsyncLLM-->>Caller: return</pre>
+
+<p>pause_generation(mode&#x3D;”keep”, clear_cache&#x3D;True) 从用户 API 到调度器状态机的调用链路：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">AsyncLLM.pause_generation()</span><br><span class="line">  └─&gt; AsyncMPClient.pause_scheduler_async()  [ZMQ utility call]</span><br><span class="line">        └─&gt; EngineCoreProc.pause_scheduler()  [engine process]</span><br><span class="line">              └─&gt; Scheduler.set_pause_state()</span><br></pre></td></tr></table></figure>
+
+<p><code>EngineCoreProc.pause_scheduler()</code> pause mode 对应行为：</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>abort</code></td>
+<td>立即调用<code>finish_requests(None, FINISHED_ABORTED)</code> 中止所有请求，发送 abort 输出，设置 <code>PAUSED_NEW</code></td>
+</tr>
+<tr>
+<td><code>wait</code></td>
+<td>设置<code>PAUSED_NEW</code>（不中止请求），等待 engine 自然 idle</td>
+</tr>
+<tr>
+<td><code>keep</code></td>
+<td>设置<code>PAUSED_ALL</code>（冻结所有调度），等待 output queue 排空</td>
+</tr>
+</tbody></table>
+<p><code>engine_idle_callback</code> 的注册与触发</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">run_busy_loop()</span><br><span class="line">  │</span><br><span class="line">  ├─ _process_input_queue()</span><br><span class="line">  │    │</span><br><span class="line">  │    ├─ has_work() → PAUSED_ALL 时返回 False</span><br><span class="line">  │    │    │</span><br><span class="line">  │    │    └─ 进入 while not has_work() 死循环</span><br><span class="line">  │    │         │</span><br><span class="line">  │    │         ├─ _notify_idle_state_callbacks()  ← engine_idle_callback 在这里被调用</span><br><span class="line">  │    │         │    [alt _reset_caches] future.set_result(None)        ← pause 的 RPC 返回</span><br><span class="line">  │    │         │</span><br><span class="line">  │    │         └─ input_queue.get(block=True)      ← 阻塞等待新消息</span><br><span class="line">  │    │              │</span><br><span class="line">  │    │              └─ 收到 resume → _handle_client_request()</span><br><span class="line">  │    │                   → resume_scheduler() → set_pause_state(UNPAUSED)</span><br><span class="line">  │    │                   → has_work() 重新返回 True，退出内层循环</span><br><span class="line">  │    │</span><br><span class="line">  │    └─ 退出 _process_input_queue</span><br><span class="line">  │</span><br><span class="line">  └─ _process_engine_step()  ← 恢复正常的调度+推理</span><br></pre></td></tr></table></figure>
+
+<h4 id="resume-generation-1"><a href="#resume-generation-1" class="headerlink" title="resume_generation"></a>resume_generation</h4><pre class="mermaid">sequenceDiagram
+    participant Caller as Trainer/RL Loop
+    participant AsyncLLM
+    participant Client as EngineCoreClient
+    participant Core as EngineCore Proc
+    participant Sched as Scheduler
+    participant MR as ModelRunner V1/V2
+
+    Caller->>AsyncLLM: resume_generation()
+    AsyncLLM->>Client: engine_core.resume_scheduler_async()
+    Client->>Core: resume_scheduler()
+
+    alt DP mode DPEngineCoreProc
+        Core->>Core: check pending_pause / ignore_start_dp_wave
+        Core->>Sched: set_pause_state(UNPAUSED)
+        Core->>Core: ignore_start_dp_wave = False
+        Note over Core: Barrier - all-reduce across DP ranks<br/>to confirm all have resumed
+        Core->>Sched: has_unfinished_requests()
+        Core->>Core: engines_running = True if global unfinished
+    else single engine
+        Core->>Sched: set_pause_state(UNPAUSED)
+    end
+
+    Note over Sched: token_budget restored to max_num_scheduled_tokens
+
+    Core->>Sched: schedule() next step loop
+    alt requests were PAUSED_NEW abort/wait
+        Note over Sched: running reqs never dequeued, continue normally.<br/>Queued adds now flushed in.
+    else requests were PAUSED_ALL mode=keep
+        Note over Sched: frozen running/waiting reqs now eligible,<br/>previously-running reqs treated as resumed
+        Sched->>Sched: _make_cached_request_data(resumed_reqs=[...])
+        alt use_v2_model_runner == False V1
+            Sched-->>MR: CachedRequestData - resumed_req_ids + all_token_ids full history
+            MR->>MR: _update_states(scheduler_output)
+            Note over MR: V1 reconstructs full sequence state<br/>from all_token_ids in cached data
+        else use_v2_model_runner == True V2
+            Sched-->>MR: NewRequestData - prefill_token_ids carries full token ids
+            Note over MR: V2 resumed request emitted as a new request,<br/>all_token_ids skipped in cached_reqs
+        end
+    end
+
+    Sched-->>Core: SchedulerOutput
+    Core-->>Client: step results / outputs
+    Client-->>AsyncLLM: await completion
+    AsyncLLM-->>Caller: return</pre>
+
+<p>resume_generation 调用链路：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">AsyncLLM.resume_generation()</span><br><span class="line">  └─&gt; AsyncMPClient.resume_scheduler_async()  [ZMQ utility call]</span><br><span class="line">        └─&gt; EngineCoreProc.resume_scheduler()  [engine process]</span><br><span class="line">              └─&gt; Scheduler.set_pause_state()</span><br></pre></td></tr></table></figure>
+
+<p>只需将调度器状态切回 <code>UNPAUSED</code>。下一次 <code>schedule()</code> 调用时:</p>
+<ul>
+<li><code>token_budget</code> 恢复正常计算</li>
+<li><code>waiting</code> 队列中的请求重新被调度</li>
+<li>之前被 <code>mode=&quot;keep&quot;</code> 冻结的请求继续执行</li>
+</ul>
+<p>DP 场景的 resume 需要额外的同步:</p>
+<ol>
+<li>确保 <code>pending_pause</code> 已清除、<code>ignore_start_dp_wave</code> 已重置</li>
+<li>调用父类的 <code>resume_scheduler()</code> 将状态设为 <code>UNPAUSED</code></li>
+<li>通过 <strong>all-reduce barrier</strong> 等待所有 DP rank 都完成 resume</li>
+<li>如果全局有未完成的请求，启动 step 循环</li>
+</ol>
+<hr>
+<h3 id="vllm-e2e用例设计"><a href="#vllm-e2e用例设计" class="headerlink" title="vllm e2e用例设计"></a>vllm e2e用例设计</h3><p><a target="_blank" rel="noopener" href="https://github.com/vllm-project/vllm/pull/52144">https://github.com/vllm-project/vllm/pull/52144</a> 已合入</p>
+<p>1、is_paused状态与幂等性：重复pause&#x2F;resume，多次循环<br>2、invalid mode行为 - return status code 状态不变<br>3、keep&#x2F;wait&#x2F;abort对in-flight请求和新请求的行为，及resume之后的行为<br>4、clear_cache &#x3D;true&#x2F;false的行为 - golden 输出比对</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> 优先级    用例                                                           主要覆盖</span><br><span class="line">━━━━━━━━  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br><span class="line"> P0        test_pause_resume_state_is_idempotent_across_cycles            is_paused、重复调用、多次循环</span><br><span class="line">────────  ─────────────────────────────────────────────────────────────  ──────────────────────────────────────────────</span><br><span class="line"> P0        test_invalid_pause_mode_preserves_state                        非法 mode 状态码及状态不变</span><br><span class="line">────────  ─────────────────────────────────────────────────────────────  ──────────────────────────────────────────────</span><br><span class="line"> P0        test_pause_mode_request_lifecycle[mode]                        abort/wait/keep 的 in-flight、新请求、resume</span><br><span class="line">────────  ─────────────────────────────────────────────────────────────  ──────────────────────────────────────────────</span><br><span class="line"> P1        test_clear_cache_preserves_output_and_controls_prefix_cache    golden 输出及缓存保留/清除</span><br></pre></td></tr></table></figure>
+
+<p><strong>1. 状态与幂等性</strong> <code>test_pause_resume_state_is_idempotent_across_cycles</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">初始 is_paused == false</span><br><span class="line">resume 两次 -&gt; 都是 200，状态仍为 false</span><br><span class="line"></span><br><span class="line">循环两轮:</span><br><span class="line">对 abort / wait / keep:</span><br><span class="line">pause(mode) 两次 -&gt; 都是 200，状态为 true</span><br><span class="line">resume 两次 -&gt; 都是 200，状态为 false</span><br></pre></td></tr></table></figure>
+
+<p><strong>2. 非法 mode</strong> <code>test_invalid_pause_mode_preserves_state</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">覆盖两个起始状态：</span><br><span class="line"></span><br><span class="line">unpaused -&gt; pause(mode=&quot;invalid&quot;) -&gt; 422 -&gt; 仍为 unpaused</span><br><span class="line">paused -&gt; pause(mode=&quot;invalid&quot;) -&gt; 422 -&gt; 仍为 paused</span><br><span class="line"></span><br><span class="line">只断言：</span><br><span class="line"></span><br><span class="line">* HTTP 状态码。</span><br><span class="line">* 调用前后的 is_paused 相同。</span><br><span class="line">* 可选检查错误位置包含 query 参数 mode，不要完整匹配 Pydantic 错误文本。</span><br></pre></td></tr></table></figure>
+
+<p><strong>3. 三种 mode 的请求生命周期</strong></p>
+<p>用一个参数化测试：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@pytest.mark.parametrize(<span class="params"><span class="string">&quot;mode&quot;</span>, [<span class="string">&quot;abort&quot;</span>, <span class="string">&quot;wait&quot;</span>, <span class="string">&quot;keep&quot;</span>]</span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_pause_mode_request_lifecycle</span>(<span class="params">server_url, mode</span>):</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>预期矩阵如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mode    pause 返回时 in-flight 请求                    pause 后提交的新请求     resume 后</span><br><span class="line">━━━━━━━ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ━━━━━━━━━━━━━━━━━━━━━━ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br><span class="line">abort   已结束，finish_reason == &quot;abort&quot;               已接受但保持 pending     新请求正常完成；旧请求不恢复</span><br><span class="line">─────── ────────────────────────────────────────────── ────────────────────── ──────────────────────────────</span><br><span class="line">wait    已正常完成，通常为 finish_reason == &quot;length&quot;    保持 pending            新请求正常完成</span><br><span class="line">─────── ────────────────────────────────────────────── ────────────────────── ──────────────────────────────</span><br><span class="line">keep    尚未完成，生成进度冻结                          保持 pending            新旧请求都正常完成</span><br></pre></td></tr></table></figure>
+
+<p>测试实现仍沿用 threading 风格，但做几点调整：</p>
+<ul>
+<li>in-flight 请求使用 streaming completion，并用“收到第一个 token”的 Event 确认它确实开始执行，替代固定的 sleep(0.3)。</li>
+<li>新请求不使用短 timeout 后断言 not ok。这会混淆“正确排队”和“请求失败”。应保持线程连接，确认 pause 期间线程未结束，resume 后再 join 并断言 ok。</li>
+<li>对 keep，可以记录 pause 返回时的 chunk 数，短暂等待后确认 chunk 数未增加，从而验证“冻结”而不仅是“尚未完成”。</li>
+</ul>
+<p><strong>4. clear_cache 与 golden 输出</strong> <code>test_clear_cache_preserves_output_and_controls_prefix_cache</code></p>
+<p>服务增加：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">--enable-prefix-caching</span><br><span class="line">--enable-prompt-tokens-details</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">使用一个明显长于 cache block 的固定 prompt，temperature=0：</span><br><span class="line"></span><br><span class="line">pause(abort, clear_cache=true) + resume，确保初始缓存为空</span><br><span class="line"></span><br><span class="line">R0 = 生成一次，作为运行时 golden</span><br><span class="line">R1 = 相同请求，确认 cached_tokens &gt; 0，证明缓存已预热</span><br><span class="line"></span><br><span class="line">pause(abort, clear_cache=false) + resume</span><br><span class="line">R2 = 相同请求</span><br><span class="line">断言 normalized(R2) == normalized(R0)</span><br><span class="line">断言 R2.cached_tokens &gt; 0</span><br><span class="line"></span><br><span class="line">pause(abort, clear_cache=true) + resume</span><br><span class="line">R3 = 相同请求</span><br><span class="line">断言 normalized(R3) == normalized(R0)</span><br><span class="line">断言 R3.cached_tokens == 0</span><br><span class="line"></span><br><span class="line">不要比较完整响应。golden 只保留：</span><br><span class="line"></span><br><span class="line">* choices[0].text</span><br><span class="line">* choices[0].finish_reason</span><br><span class="line">* token 序列，例如 logprobs.tokens</span><br><span class="line">* prompt/completion token 数，但排除 cached_tokens</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>速度与稳定性</strong></p>
+<p>使用 class&#x2F;module scoped 的 server_url fixture，一次启动服务供所有测试复用，并在每个测试前后调用一次 resume() 恢复状态。cache 测试自行在开始时执行 clear_cache&#x3D;True，避免共享服务造成缓存污染。</p>
+<p>最终成本大致是：</p>
+<ul>
+<li>1 次模型服务启动。</li>
+<li>3 个 mode 各一个短 in-flight 请求。</li>
+<li>4 次短 golden 请求。</li>
+<li>状态和非法参数测试几乎没有额外推理成本。</li>
+</ul>
+<p>不建议在这一层增加并发 pause&#x2F;resume race、多请求批量、几十轮循环或 3 modes × 2 clear_cache 全组合；abort&#x2F;wait&#x2F;keep 和多请求行为在底层测试中已经有较完整覆盖，HTTP E2E保留上述关键映射即可。</p>
+<h3 id="RL-e2e用例设计"><a href="#RL-e2e用例设计" class="headerlink" title="RL e2e用例设计"></a>RL e2e用例设计</h3><p><code>examples/rl/rlhf_async_new_apis.py</code> 展示了在异步 RL 训练中如何通过 <code>pause/resume</code> + <code>weight transfer</code> 在推理运行期间切换权重。</p>
+<pre class="mermaid">sequenceDiagram
+    participant D as Driver
+    participant TM as TrainModel (Ray actor)
+    participant LLM as MyLLM (AsyncLLM)
+
+    Note over D,LLM: Setup: init train model + inference engine on separate GPUs
+    D->>TM: TrainModel.remote(MODEL_NAME_V2)
+    D->>LLM: MyLLM.remote(**llm_kwargs)
+    D->>TM: get_master_address_and_port()
+    D->>LLM: init_weight_transfer_engine(NCCL init info)
+    D->>TM: init_weight_transfer_group(world_size)
+    Note over TM,LLM: NCCL process group established
+
+    rect rgb(245,245,245)
+    Note over D,LLM: Phase 1: concurrent generation with weight sync
+    loop for each prompt
+        D->>LLM: do_generate.remote(prompt_ids, sampling_params)
+        Note over LLM: streams tokens, sets<br/>_request_pause_flag at threshold
+    end
+    D->>LLM: pause_after_n_tokens()
+    LLM->>LLM: await pause_generation(mode="keep")
+    Note over LLM: sleep(5), _generation_paused = True
+    D->>LLM: start_weight_update(is_checkpoint_format=True)
+    D->>LLM: update_weights(NCCLWeightTransferUpdateRequest)
+    D->>TM: broadcast_weights(packed=True)
+    TM-->>LLM: weights sent over NCCL
+    D->>LLM: finish_weight_update()
+    D->>LLM: resume_generation()
+    LLM-->>D: gen_futures resolve (output, pause_token_index)
+    end
+
+    Note over D,LLM: Phase 2: validation
+    D->>LLM: shutdown() / ray.kill(llm, train_model)
+    D->>LLM: fresh MyLLM.remote(MODEL_NAME_V2)
+    loop for each result
+        D->>LLM: do_generate(prompt+prefix tokens, max_tokens=n_after)
+    end
+    LLM-->>D: val_results
+    Note over D: compare post-swap tokens vs<br/>fresh V2 output, assert pass_rate</pre>
+
+<p>概述：Trainer 占一个 GPU，vLLM 引擎占另一个 GPU，通过 NCCL 通道在 GPU 间直接传输权重。开启 batch_invariant 保证输出确定性，用于后续验证。</p>
+<p>Phase 1: 并发生成 + 权重切换。核心流程：触发生成 → 暂停 → 切换权重 → 恢复</p>
+<p>Phase 2: 正确性验证。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">验证逻辑：</span><br><span class="line">   旧权重生成的 before tokens + 新权重 = weight-synced 引擎的 after tokens</span><br><span class="line">                                        = 独立 V2 引擎用相同前缀生成的结果</span><br><span class="line">   如果两者一致，说明 weight transfer 正确。</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="model-runner-v2方案"><a href="#model-runner-v2方案" class="headerlink" title="model runner v2方案"></a>model runner v2方案</h3><p>V1 vs V2 的核心差异：被抢占&#x2F;恢复请求的处理方式</p>
+<pre class="mermaid">flowchart TD
+    A["resume_scheduler() -> pause_state = UNPAUSED"] --> B["scheduler.schedule() next step"]
+    B --> C["RUNNING loop finds frozen/preempted request<br/>status == PREEMPTED or WAITING"]
+    C --> D{"request.status == PREEMPTED?"}
+    D -->|"yes"| E["scheduled_resumed_reqs.append(request)"]
+    D -->|"no (WAITING, i.e. fresh)"| F["scheduled_new_reqs.append(request)"]
+
+    E --> G{"use_v2_model_runner?"}
+    F --> H["always in scheduled_new_reqs<br/>(NewRequestData)"]
+
+    G -->|"V1: False"| I["stays in scheduled_resumed_reqs<br/>-> _make_cached_request_data()<br/>-> CachedRequestData<br/>resumed_req_ids += req_id<br/>all_token_ids[req_id] = full history"]
+    G -->|"V2: True"| J["merged into scheduled_new_reqs<br/>-> NewRequestData.from_request(req, blocks, req._all_token_ids)<br/>prefill_token_ids carries full history<br/>all_token_ids NOT populated"]
+
+    I --> K["GPUModelRunner._update_states:<br/>req_data = scheduled_cached_reqs<br/>resumed_from_preemption = req_id in resumed_req_ids<br/>req_index is None -> reqs_to_add<br/>output_token_ids recovered from all_token_ids"]
+    J --> L["GPUModelRunner treats it like a brand-new request:<br/>uses prefill_token_ids directly,<br/>no need to reconstruct output_token_ids from all_token_ids"]</pre>
+
+<p>V1 Model Runner：resumed 请求走 <code>CachedRequestData</code> 路径</p>
+<ul>
+<li>被恢复的请求放入 <code>scheduled_cached_reqs.resumed_req_ids</code></li>
+<li>完整的 token 历史（prompt + 已生成 token）通过 <code>all_token_ids</code> 字段传递</li>
+<li>调度器需要维护 <code>prev_step_scheduled_req_ids</code> 来判断哪些请求需要传递 <code>all_token_ids</code></li>
+<li>Model runner 在 <code>_update_states</code> 中处理 resumed 请求时，需要从 <code>all_token_ids</code> 恢复 <code>output_token_ids</code></li>
+</ul>
+<p>V2 Model Runner：resumed 请求走 <code>NewRequestData</code> 路径</p>
+<ul>
+<li><code>scheduled_resumed_reqs</code> 被<strong>合并进</strong> <code>scheduled_new_reqs</code></li>
+<li>完整 token 历史通过 <code>NewRequestData.prefill_token_ids</code> 传递（v2 专用字段）</li>
+<li>V2 的 <code>GPUModelRunner.add_requests()</code> 统一处理所有请求（包括恢复的请求），使用 <code>prefill_token_ids</code> 作为完整的 token 上下文</li>
+<li><code>CachedRequestData.all_token_ids</code> 始终为空 ，不需要 <code>prev_step_scheduled_req_ids</code> 追踪</li>
+</ul>
+<p>MRV2 设计原则：<strong>“Treat preemption as completion. On resume, re-add request data as fresh state.”</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>V1 Model Runner</th>
+<th>V2 Model Runner</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>resumed 请求的调度输出位置</td>
+<td><code>scheduled_cached_reqs</code> (resumed_req_ids)</td>
+<td><code>scheduled_new_reqs</code> (prefill_token_ids)</td>
+</tr>
+<tr>
+<td>token 历史传递方式</td>
+<td><code>CachedRequestData.all_token_ids</code></td>
+<td><code>NewRequestData.prefill_token_ids</code></td>
+</tr>
+<tr>
+<td><code>prev_step_scheduled_req_ids</code></td>
+<td>需要维护</td>
+<td>不需要</td>
+</tr>
+<tr>
+<td>model runner 处理方式</td>
+<td>特殊的 resumed 路径，需恢复 output_token_ids</td>
+<td>与新请求完全相同的路径，persistent batch 重新初始化</td>
+</tr>
+<tr>
+<td>复杂度</td>
+<td>需要区分 running&#x2F;resumed&#x2F;new 三种状态</td>
+<td>resumed 等同于 new，逻辑更简洁</td>
+</tr>
+</tbody></table>
+<hr>
+<p>异步 RL 的 pause&#x2F;resume 功能直接复用了 vllm 的代码，vllm-ascend 没有自己实现生成层面的 pause&#x2F;resume 逻辑，而是完全复用了上游 vllm 的基础设施。</p>
+<p>具体复用方式：</p>
+<ol>
+<li><p><strong>API 层面</strong>：RL 示例直接调用上游 API</p>
+<ul>
+<li>rlhf_async_new_apis.py 继承 vllm.AsyncLLMEngine，调用 super().pause_generation(mode&#x3D;”keep”)</li>
+<li>rlhf_http_hccl.py &#x2F; rlhf_http_npu_ipc.py 调用 vllm API Server 的 &#x2F;pause 和 &#x2F;resume HTTP 端点</li>
+</ul>
+</li>
+<li><p><strong>调度器层面</strong>：自定义调度器直接 import 上游的类和枚举</p>
+<ul>
+<li>PauseState 从 vllm.v1.core.sched.interface 导入</li>
+<li>AsyncScheduler 从 vllm.v1.core.sched.async_scheduler 导入</li>
+<li>AsyncRecomputeScheduler 继承自上游的 AsyncScheduler</li>
+<li>调度循环中通过 self._pause_state &#x3D;&#x3D; PauseState.PAUSED_ALL 判断是否暂停</li>
+</ul>
+</li>
+<li><p>vllm-ascend 源码中没有任何 pause_generation、resume_generation、&#x2F;pause、&#x2F;resume 或 PauseState 的定义</p>
+</li>
+</ol>
+<p>vllm-ascend 自己实现的部分（与 RL 相关但不属于 pause&#x2F;resume）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">┌──────────────┬───────────────────────────────────────────────────────────────────────────────────────────┐</span><br><span class="line">  │     功能     │                                           说明                                            │</span><br><span class="line">  ├──────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤</span><br><span class="line">  │ Sleep Mode   │ NPU 内存 offload/restore，基于 CANN/CaMemAllocator，完全不依赖上游的 CUDA cumem           │</span><br><span class="line">  ├──────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤</span><br><span class="line">  │ 权重传输后端 │ HCCL 引擎和 NPU IPC 引擎替代 NCCL，用于 RL 场景下 trainer 和 inference 进程间的权重同步   │</span><br><span class="line">  ├──────────────┼───────────────────────────────────────────────────────────────────────────────────────────┤</span><br><span class="line">  │ 自定义调度器 │ RecomputeScheduler、AsyncRecomputeScheduler 等扩展上游调度器，添加 recompute/offload 逻辑 │</span><br><span class="line">  └──────────────┴───────────────────────────────────────────────────────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+<h3 id="RL侧接入方案（以vime为例）"><a href="#RL侧接入方案（以vime为例）" class="headerlink" title="RL侧接入方案（以vime为例）"></a>RL侧接入方案（以vime为例）</h3><p><strong>1、RL侧暴露的控制平面接口</strong></p>
+<table>
+<thead>
+<tr>
+<th>接口</th>
+<th>语义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>pause_generation</code></td>
+<td>暂停调度，对应 HTTP<code>/pause</code>，但保留现有 KV cache（<code>mode=keep, clear_cache=false</code>）</td>
+</tr>
+<tr>
+<td><code>flush_cache</code></td>
+<td>显式清理 prefix cache，为权重替换腾出&#x2F;校正状态，与 pause 解耦为独立步骤</td>
+</tr>
+<tr>
+<td><code>start_weight_update</code> &#x2F; <code>finish_weight_update</code></td>
+<td>显式声明”进入&#x2F;退出权重更新会话”的窗口，允许引擎内部做互斥锁定、缓冲区切换等准备</td>
+</tr>
+<tr>
+<td><code>continue_generation</code></td>
+<td>恢复调度，对应 HTTP<code>/resume</code></td>
+</tr>
+</tbody></table>
+<p><code>pause_generation</code>&#x2F;<code>continue_generation</code>，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">pause_generation</span>(<span class="params">self</span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="variable language_">self</span>.node_rank != <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    response = requests.post(</span><br><span class="line">        <span class="string">f&quot;http://<span class="subst">&#123;self.server_host&#125;</span>:<span class="subst">&#123;self.server_port&#125;</span>/pause&quot;</span>,</span><br><span class="line">        params=&#123;<span class="string">&quot;mode&quot;</span>: <span class="string">&quot;keep&quot;</span>, <span class="string">&quot;clear_cache&quot;</span>: <span class="string">&quot;false&quot;</span>&#125;,</span><br><span class="line">        json=&#123;&#125;,</span><br><span class="line">    )</span><br><span class="line">    response.raise_for_status()</span><br><span class="line">    <span class="keyword">return</span> response</span><br><span class="line">  </span><br><span class="line"><span class="keyword">def</span> <span class="title function_">continue_generation</span>(<span class="params">self</span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="variable language_">self</span>.node_rank != <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    response = requests.post(<span class="string">f&quot;http://<span class="subst">&#123;self.server_host&#125;</span>:<span class="subst">&#123;self.server_port&#125;</span>/resume&quot;</span>, json=&#123;&#125;)</span><br><span class="line">    response.raise_for_status()</span><br><span class="line">    <span class="keyword">return</span> response</span><br></pre></td></tr></table></figure>
+
+<p>每个引擎 actor 应仅在”控制节点”（vime 中为 <code>node_rank == 0</code>）真正发出控制请求，其余节点直接 no-op 返回，避免对同一 server 重复请求。</p>
+<p>vime 底层 <code>/pause</code>、<code>/resume</code>、<code>/sleep</code>、<code>/wake_up</code>、<code>start_weight_update</code>、<code>finish_weight_update</code> 等具体是 vLLM server 侧暴露的 HTTP 接口，这部分实现在 vLLM 本身。</p>
+<hr>
+<p><strong>2、时序图</strong></p>
+<pre class="mermaid">sequenceDiagram
+    participant M as "MegatronTrainRayActor (rank0)"
+    participant V as "VLLMEngine (node_rank0)"
+    participant S as "vLLM server (/pause /resume)"
+
+    M->>V: "pause_generation() (Ray remote)"
+    alt "node_rank == 0"
+        V->>S: "POST /pause (mode=keep, clear_cache=false)"
+        S-->>V: "200 OK"
+    else "node_rank != 0"
+        V-->>M: "no-op, return None"
+    end
+    M->>V: "flush_cache()"
+    Note over M: "int4/fp4 pre-process (可选)"
+    Note over M,V: "dist.barrier(Gloo)"
+
+    M->>V: "start_weight_update(is_checkpoint_format=True)"
+    Note over M,V: "dist.barrier(Gloo)"
+
+    alt "NCCL, non-colocated (UpdateWeightFromDistributed)"
+        loop "For each weight bucket"
+            M->>M: "all_gather_params_async / convert_to_hf"
+            M->>V: "NCCL broadcast weights"
+        end
+    else "IPC, colocated (UpdateWeightFromTensor)"
+        loop "For each weight chunk (bounded in-flight)"
+            M->>M: "build CUDA IPC handles / all_gather_object(Gloo)"
+            M->>V: "update_weights_from_tensor (IPC ObjectRef)"
+        end
+        Note over M: "torch.cuda.ipc_collect()"
+    end
+
+    M->>V: "finish_weight_update()"
+    Note over M,V: "dist.barrier(Gloo)"
+    Note over M: "int4/fp4 post-process (可选)"
+
+    M->>V: "continue_generation() (Ray remote)"
+    alt "node_rank == 0"
+        V->>S: "POST /resume"
+        S-->>V: "200 OK"
+    else "node_rank != 0"
+        V-->>M: "no-op, return None"
+    end
+    Note over M,V: "dist.barrier(Gloo)"</pre>
+
+<p><code>pause_generation</code> 向 <code>/pause</code> 端点发送带 <code>mode=keep, clear_cache=false</code> 参数的 POST 请求，暂停生成但保留 KV cache（由 <code>flush_cache</code> 单独控制清理）；<code>continue_generation</code> 向 <code>/resume</code> 端点发送无参数 POST 请求以恢复推理。</p>
+<p>两个方法都有 <code>if self.node_rank != 0: return</code> 的防护，因为在多节点跨主机部署的引擎中，只有 rank0（持有 vLLM server 控制端点）需要真正发请求，其余 headless worker 直接跳过。</p>
+<hr>
+<p><strong>3、model runner v1&#x2F;v2</strong></p>
+<p>vLLM 的 pause&#x2F;resume 特性，其对 RL 侧暴露的接口（<code>pause_generation</code> &#x2F; <code>resume_generation</code>）与对应 HTTP 端点（<code>/pause</code>、<code>/resume</code>、<code>/is_paused</code>）在 model runner v2 引入后保持不变。</p>
+<p>model runner v2 相较于 v1 的差异仅体现在调度器（<code>Scheduler</code>）内部向 model runner 传递请求数据的格式上，不影响 RL 侧调用方式，因此 RL 侧无需为适配 v2 做额外修改。</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p>vLLM文档：<a target="_blank" rel="noopener" href="https://docs.vllm.ai/en/stable/training/async_rl/">https://docs.vllm.ai/en/stable/training/async_rl/</a></p>
+
   </div>
   <!-- 原文链接/阅读更多：仅当page.link存在时显示 -->
   
   <!-- 文章底部组件区：仅对「post」「docs」布局生效 -->
+  
+    
+    <div class='footer'>
+       <!-- 参考资料：仅当参考列表非空时显示 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明：post布局+启用+未禁用时显示 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
   
   <!-- 文章底部元信息：复用子模板 -->
   
@@ -3064,6 +3588,80 @@ document.addEventListener('DOMContentLoaded', function () {
 
   <div class='article-meta' id="bottom">
     <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-08-20T20:16:10+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2026年8月20日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Infra/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Infra</p></a></div>
+  <span hidden itemprop="keywords">Infra</span>
+  
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://floatlibai.github.io/2026/08/rl-async-pause-resume/&title=异步rl：pause/resume - floatlibai's blog&summary="
+          
+          >
+          
+            <img alt="share" src="https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://floatlibai.github.io/2026/08/rl-async-pause-resume/&title=异步rl：pause/resume - floatlibai's blog&summary="
+          
+          >
+          
+            <img alt="share" src="https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://floatlibai.github.io/2026/08/rl-async-pause-resume/&title=异步rl：pause/resume - floatlibai's blog&summary="
+          
+          >
+          
+            <img alt="share" src="https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
       
     </div>
     <!-- Custom Files bottomMeta begin -->
@@ -3091,7 +3689,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/404.html#comments">
+      <meta itemprop="discussionUrl" content="/2026/08/rl-async-pause-resume/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -3109,8 +3707,71 @@ document.addEventListener('DOMContentLoaded', function () {
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
 
+  
+    
+    
+      
+    
+  
+
+  
+    
+    
+      
+
+
+<div class="pjax"><!-- pjax占位 related--></div>
+
+    
+  
+
+  
+    
+    
+      
+
+
+<section class="widget recent desktop mobile shadow floatable blur pjax">
+  
+  <header>
+    
+      <i class="fa-solid fa-clock fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <widget class="widget-wrapper recent post-list"><div class="widget-body fs14"><a class="item title" href="/2026/08/rl-async-pause-resume/"><span class="title">异步rl：pause/resume</span></a></div></widget>
+  </div>
+</section>
+
+    
+  
+
 
 <div class="widget-sticky pjax">
+
+  
+  
+
+
+
+  <section class="widget toc-wrapper toc desktop mobile shadow floatable blur" id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Pause-and-Resume-API"><span class="toc-text">Pause and Resume API</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#pause-generation"><span class="toc-text">pause_generation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#resume-generation"><span class="toc-text">resume_generation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTP-Endpoints"><span class="toc-text">HTTP Endpoints</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B8%E5%9E%8B%E5%BC%82%E6%AD%A5RL%E6%B5%81%E7%A8%8B"><span class="toc-text">典型异步RL流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-text">代码实现</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84"><span class="toc-text">整体架构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">核心数据结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pause-generation-1"><span class="toc-text">pause_generation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#resume-generation-1"><span class="toc-text">resume_generation</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vllm-e2e%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1"><span class="toc-text">vllm e2e用例设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RL-e2e%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1"><span class="toc-text">RL e2e用例设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#model-runner-v2%E6%96%B9%E6%A1%88"><span class="toc-text">model runner v2方案</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RL%E4%BE%A7%E6%8E%A5%E5%85%A5%E6%96%B9%E6%A1%88%EF%BC%88%E4%BB%A5vime%E4%B8%BA%E4%BE%8B%EF%BC%89"><span class="toc-text">RL侧接入方案（以vime为例）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Reference"><span class="toc-text">Reference</span></a></li></ol>
+    </div>
+  </section>
+
+
+  
 
 </div>
 
@@ -3127,11 +3788,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <div class="widget pjax"><!-- pjax占位 lastupdate--></div>
 
-<div class="widget pjax"><!-- pjax占位 recent--></div>
-
 <div class="widget pjax"><!-- pjax占位 tree--></div>
-
-<div class="widget pjax"><!-- pjax占位 related--></div>
 
 <div class="widget pjax"><!-- pjax占位 tagtree--></div>
 
@@ -3153,7 +3810,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3835,6 +4492,41 @@ const performanceMonitor = {
 
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
+
+        <script>
+  volantis.js("https://unpkg.com/mermaid@11.12.0/dist/mermaid.min.js").then(()=>{
+    const els = document.querySelectorAll('.mermaid');
+    if (els.length > 0) {
+      const mermaid_config = {
+        startOnLoad: false,
+        theme: 
+            "" == "true" &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "neutral",
+        logLevel: 3,
+        themeVariables: {
+          darkMode: true
+        },
+        flowchart: {
+          useMaxWidth: false,
+          htmlLabels: true,
+          curve: "linear"
+        },
+        gantt: {
+          axisFormat: "%Y/%m/%d"
+        },
+        sequence: {
+          actorMargin: 50
+        }
+      }
+      mermaid.initialize(mermaid_config);
+      mermaid.run();
+    }
+  });
+</script>
+
+
 
 </pjax>
 
